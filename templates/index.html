@@ -11,16 +11,16 @@
 
     <div class="container">
 
-      <h1>Gestão de Clientes</h1>
+      <h1 class="text-center">Gestão de Clientes</h1>
 
       <!-- Formulário add cliente -->
-      <div c-container="{{ url_for('cliente.form_cliente') }}"></div>
+      <div id="form-cliente" c-container="{{ url_for('cliente.form_cliente') }}"></div>
 
 
       <hr>
 
       <!-- Lista de cliente -->
-      <h2 class="text-center">Lista de clientes</h2>
+      <h2>Lista de clientes</h2>
       <div c-container="{{ url_for('cliente.listar_clientes') }}"></div>
       
     </div>
